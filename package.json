@@ -9,7 +9,7 @@
     "proxymise"
   ],
   "license": "MIT",
-  "main": "dist/proxy-promise.development.js",
+  "main": "dist/index.development.js",
   "files": [
     "dist",
     "src",
