@@ -9,7 +9,7 @@ fork proxymise, proxymise执行栈相关信息会丢失, pre-get则进行了跟�
     ;(await preget({a: 1})).a  // 1
     ```
 2. ``` javascript
-    preget(xx).finally()  // proxymise遗漏了finally的处理
+    preget(xx).finally()  // proxymise遗漏了finally的处理, preget可以正常使用
     ```
 
 [![npm](https://img.shields.io/npm/v/pre-get.svg)](https://www.npmjs.com/package/pre-get)
