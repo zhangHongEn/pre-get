@@ -8,6 +8,9 @@ const proxymise = (target) => {
 };
 
 const handler = {
+  getPrototypeOf() {
+    return Promise.prototype;
+  },
   construct(target, argumentsList) {
     if (target.__proxy__) target = target();
     return proxymise(Reflect.construct(target, argumentsList));
@@ -15,7 +18,7 @@ const handler = {
 
   get(target, property, receiver) {
     if (target.__proxy__) target = target();
-    if (property !== 'then' && property !== 'catch' && typeof target.then === 'function') {
+    if (property !== 'then' && property !== 'catch' && property !== 'finally' && typeof target.then === 'function') {
       return proxymise(target.then(value => get(value, property, receiver)));
     }
     return proxymise(get(target, property, receiver));
