@@ -33,7 +33,7 @@ const handler = {
   apply(target, thisArg, argumentsList) {
     if (target.__proxy__) target = target();
     const additional = target.__proxy__additional;
-    recordStack('()');
+    recordStack(additional, '()');
     if (typeof target.then === 'function') {
       return proxymise(target.then(value => run(() => Reflect.apply(value, thisArg, argumentsList), value, additional)), additional);
     }
