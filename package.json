@@ -2,7 +2,7 @@
   "name": "pre-get",
   "version": "1.0.2",
   "description": "Chainable Promise Proxy（fork Proxymise add stack）",
-  "repository": "https://github.com/zhangHongEn/proxy-promise",
+  "repository": "https://github.com/zhangHongEn/pre-get",
   "keywords": [
     "proxy",
     "promise",
