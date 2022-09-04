@@ -1,19 +1,15 @@
 # pre-get
 
-[中文文档](doc/chinese)
-
-fork proxymise, The information related to the "proxymise" execution stack will be lost, and the pre get is tracked, which greatly improves the availability
-
-
-![npm](./doc/pre-get-stack.png)
-![npm](./doc/pre-get-stack2.png)
-In addition, pre-get also makes proxy proxy more in line with normal thinking
+fork proxymise, proxymise执行栈相关信息会丢失, pre-get则进行了跟踪, 极大的提升了可用性
+![npm](./pre-get-stack.png)
+![npm](./pre-get-stack2.png)
+此外, pre-get还做了一些使proxy promise更加符合正常思维的用法
 1. ``` javascript
     preget(xx) instanceof Promise // true 
     ;(await preget({a: 1})).a  // 1
     ```
 2. ``` javascript
-    preget(xx).finally()  // Proxymise omits the processing of finally, and preget can be used normally
+    preget(xx).finally()  // proxymise遗漏了finally的处理, preget可以正常使用
     ```
 
 [![npm](https://img.shields.io/npm/v/pre-get.svg)](https://www.npmjs.com/package/pre-get)
