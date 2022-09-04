@@ -1,6 +1,6 @@
 {
   "name": "pre-get",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Chainable Promise Proxy（fork Proxymise add stack）",
   "repository": "https://github.com/zhangHongEn/pre-get",
   "keywords": [
