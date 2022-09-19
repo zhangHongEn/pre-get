@@ -1,6 +1,6 @@
 {
   "name": "pre-get",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Chainable Promise Proxy（fork Proxymise add stack）",
   "repository": "https://github.com/zhangHongEn/pre-get",
   "keywords": [
@@ -11,10 +11,8 @@
   "license": "MIT",
   "main": "dist/index.development.js",
   "files": [
-    "doc",
     "dist",
-    "src",
-    "doc"
+    "src"
   ],
   "scripts": {
     "lint": "eslint .",
